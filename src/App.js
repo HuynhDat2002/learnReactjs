@@ -6,9 +6,8 @@ import SetTimeout from './learnUseEffect/SetTimeout.js';
 import Cleanup from './learnUseEffect/Cleanup.js';
 import Count from './learnUseReducer/Count.js';
 import Total from './learnUseMemo/TotalProducts.js';
-import Todo from './learnUseReducer/Todo.js'
-import Context from './learnContext/Context.js'
-
+// import Todo from './learnUseReducer/Todo.js'
+import MainContext from './learnContext/Main.js'
 import { useState,useCallback,useMemo,memo, useRef } from 'react';
 
 function App() {
@@ -49,12 +48,14 @@ function App() {
     },0)
     return result;
   },[products])
+
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <button onClick={()=>setShow(!show)}>Toggle</button>
-        {show && <Context/>}
+        {show && <MainContext/>}
         
       </header>
     </div>
