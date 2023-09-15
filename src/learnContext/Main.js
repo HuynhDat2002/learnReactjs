@@ -1,6 +1,7 @@
 import Context from "./Context.js"
 import '../App.css'
 import { ThemeContext} from "./ThemeContext.js"
+import {StoreContext} from '../store'
 import { useContext } from "react"
 
 //1.Create Context
