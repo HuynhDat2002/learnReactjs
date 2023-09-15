@@ -10,7 +10,7 @@ function ThemeProvider({children}) {
 
     const value={
         theme,
-        toggleTheme 
+        toggleTheme
     }
     return(
         <ThemeContext.Provider value={value}>
@@ -19,4 +19,4 @@ function ThemeProvider({children}) {
     )
 }
 
-export {ThemeContext}
+export {ThemeContext,ThemeProvider}

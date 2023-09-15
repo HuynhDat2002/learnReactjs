@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { ThemeProvider } from './learnContext/ThemeContext.js';
 //Fake comments
 function emitComment(id){
     setInterval(()=>{
@@ -24,9 +24,15 @@ emitComment(3);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+
+<ThemeProvider>
+
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+</ThemeProvider>
+
+
 );
 
 // If you want to start measuring performance in your app, pass a function
