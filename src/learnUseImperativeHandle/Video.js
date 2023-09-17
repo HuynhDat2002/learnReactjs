@@ -13,10 +13,9 @@ function Video(props,ref){
     }))
     return(
         <video 
-        ref={videoRef}
-        src={video1}
-        width={300}
-
+            ref={videoRef}
+            src={video1}
+            width={300}
         />
     )
 }
